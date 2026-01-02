@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
           className="mb-8 flex justify-center items-center gap-3"
         >
           <div className="h-px w-8 bg-gray-300"></div>
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-gray-500">Senior Product Engineer</span>
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-gray-500">Enthusiastic Software Engineer</span>
           <div className="h-px w-8 bg-gray-300"></div>
         </motion.div>
 
@@ -96,19 +96,19 @@ export const Hero: React.FC = () => {
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" 
+                src="/images/profile/ProfileEtna.jpg" 
                 alt="Marius Profile" 
                 className="w-full h-full object-cover"
               />
             </div>
-            {/* Decorative element */}
-            <div className="absolute -bottom-4 -right-4 bg-white p-3 rounded-xl shadow-lg border border-gray-100 flex items-center gap-2">
+            {/* Open to work decorative element */}
+            {/* <div className="absolute -bottom-4 -right-4 bg-white p-3 rounded-xl shadow-lg border border-gray-100 flex items-center gap-2">
                <span className="relative flex h-3 w-3">
                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                  <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                </span>
                <span className="text-xs font-bold text-gray-800">Open to work</span>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </motion.div>

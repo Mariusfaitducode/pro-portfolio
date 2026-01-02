@@ -45,39 +45,6 @@ export const Skills: React.FC = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Certifications Section */}
-        <div className="bg-[#111111] text-white rounded-3xl p-8 md:p-12">
-          <div className="flex items-center gap-4 mb-12">
-            <Award className="w-8 h-8 text-[#0047FF]" />
-            <h3 className="font-serif text-3xl md:text-4xl">Certifications</h3>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-            {CERTIFICATIONS.map((cert, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="group border-b border-gray-800 pb-8 last:border-0"
-              >
-                <div className="flex justify-between items-start mb-2">
-                  <span className="text-[#0047FF] font-mono text-xs uppercase tracking-wider">
-                    {cert.issuer}
-                  </span>
-                  <span className="text-gray-500 font-mono text-xs">
-                    {cert.year}
-                  </span>
-                </div>
-                <h4 className="font-serif text-xl md:text-2xl text-gray-200 group-hover:text-white transition-colors">
-                  {cert.title}
-                </h4>
-              </motion.div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

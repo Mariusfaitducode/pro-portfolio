@@ -23,7 +23,7 @@ function App() {
         <WorkStack />
         <Career />
         <Skills />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Footer />
       </main>
     </div>
