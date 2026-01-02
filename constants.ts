@@ -3,42 +3,44 @@ import { Layers, Palette, Compass, Code, Smartphone, Database, Box } from 'lucid
 export const PROJECTS = [
   {
     id: 1,
-    title: "EcoQuest",
-    year: "2024",
-    category: "Augmented Reality",
-    description: "An immersive AR experience gamifying environmental choices. Users visualize virtual 3D worlds where strategic card choices impact the ecosystem.",
-    tech: ["Unity", "C#", "Blender"],
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+    title: "TidyMailbox",
+    year: "2025",
+    category: "Mailbox Management",
+    description: "A web application that helps you manage your mailbox efficiently by providing a clean and intuitive interface for your emails.",
+    tech: ["NextJs", "TypeScript", "Tailwind CSS", "Supabase"],
+    image: "/images/projects/TidyMailbox.png",
+    link: "https://tidy-mailbox.com",
     color: "#2A9D8F"
   },
   {
     id: 2,
-    title: "Eventum",
-    year: "2023",
-    category: "Social Platform",
-    description: "A comprehensive social web network centered on event organization and sharing. Built with a robust backend to handle real-time interactions.",
-    tech: ["Angular", "PHP", "SQL"],
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2670&auto=format&fit=crop",
+    title: "Best Matcha Ever",
+    year: "2025",
+    category: "Matcha Shop",
+    description: "An e-commerce website for a new modern matcha brand, featuring a clean and intuitive interface for browsing and buying matcha products.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Supabase", "Stripe"],
+    image: "/images/projects/BestMatchaEver.png",
+    link: "https://bestmatcheaever.com",
     color: "#E76F51"
   },
   {
     id: 3,
-    title: "Abuelos",
-    year: "2023",
-    category: "Mobile Commerce",
-    description: "A streamlined mobile e-commerce application connecting local farmers directly to consumers. Features real-time inventory and route optimization.",
-    tech: ["Ionic", "NestJS", "Firebase"],
-    image: "https://images.unsplash.com/photo-1615811361523-6bd03c774734?q=80&w=2574&auto=format&fit=crop",
+    title: "OptiApp",
+    year: "2025",
+    category: "Recording App",
+    description: "A recording app that allows to record your meetings. The meetings is then sent to Optiverse for transcription and analysis.",
+    tech: ["React Native", "TypeScript", "Tailwind CSS", "Supabase"],
+    image: "/images/projects/OptiApp.png",
     color: "#F4A261"
   },
   {
     id: 4,
-    title: "ConceptAsk",
-    year: "2022",
+    title: "ConcepTask",
+    year: "2024",
     category: "Productivity",
     description: "A mobile todo-list application that visualizes task completion as a growing graph, providing visual motivation for productivity.",
-    tech: ["Angular", "Ionic", "D3.js"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop",
+    tech: ["Angular", "Ionic", "D3.js", "Firebase"],
+    image: "/images/projects/ConcepTask.png",
     color: "#264653"
   }
 ];
@@ -50,8 +52,8 @@ export const SERVICES = [
     icon: Layers,
   },
   {
-    title: "Design Systems",
-    description: "Creating unified visual languages and reusable component libraries for consistent user experiences.",
+    title: "Landing Page",
+    description: "Creating beautiful and functional landing pages for your projects with high performance and SEO optimization.",
     icon: Palette,
   },
   {
@@ -117,9 +119,15 @@ export const CAREER_TIMELINE = [
     description: "Freelance missions offering tailored digital solutions for clients."
   },
   {
-    date: "Mar 2024 - June 2024",
-    role: "Virtual World Semester",
+    date: "Sept 2024 - Jan 2025",
+    role: "AI specialization",
     company: "ULiège",
+    description: "Specialized block semester focusing on AI and virtual environments."
+  },
+  {
+    date: "Mar 2024 - June 2024",
+    role: "Virtual World specialization",
+    company: "UTBM",
     description: "Specialized block semester focusing on AI and virtual environments."
   },
   {

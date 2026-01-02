@@ -69,7 +69,7 @@ export const Hero: React.FC = () => {
               transition={{ duration: 1, delay: 0.4 }}
               className="max-w-md mx-auto md:mx-0 text-gray-600 text-lg font-light leading-relaxed mb-10"
             >
-              Building high-performance applications with a focus on intuitive design. Specialized in React, TypeScript, and 3D interactions.
+              Building high-performance applications with a focus on intuitive design.
             </motion.p>
 
             <motion.div 
@@ -81,7 +81,7 @@ export const Hero: React.FC = () => {
               <MagneticButton>
                 <button className="px-8 py-4 bg-[#111111] text-white rounded-full font-medium text-sm uppercase tracking-wide hover:bg-[#0047FF] transition-colors flex items-center gap-2">
                   <Calendar className="w-4 h-4" />
-                  Book a slot
+                  Let's work together
                 </button>
               </MagneticButton>
             </motion.div>
