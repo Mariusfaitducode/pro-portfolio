@@ -40,7 +40,7 @@ export const PROJECTS = [
     category: "Productivity",
     description: "A mobile todo-list application that visualizes task completion as a growing graph, providing visual motivation for productivity.",
     tech: ["Angular", "Ionic", "D3.js", "Firebase"],
-    image: "/images/projects/ConcepTask.png",
+    image: "/images/projects/ConcepTask.jpeg",
     color: "#264653"
   }
 ];
