@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SKILL_CATEGORIES, CERTIFICATIONS } from '../constants';
 import { Award } from 'lucide-react';
+import { MagneticButton } from './ui/MagneticButton';
 
 export const Skills: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState(0);
@@ -78,18 +79,26 @@ export const Skills: React.FC = () => {
                       initial={{ opacity: 0, scale: 0.9 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: i * 0.05, duration: 0.2 }}
-                      className="group"
                     >
-                      <div className="px-5 py-3 bg-white border border-gray-200 rounded-full text-sm text-gray-600 font-medium hover:border-[#0047FF] hover:text-[#0047FF] transition-all duration-300 cursor-default shadow-sm flex items-center gap-3">
-                        {item.logo && (
-                          <img 
-                            src={item.logo} 
-                            alt={`${item.name} logo`}
-                            className="w-5 h-5 object-contain flex-shrink-0"
-                          />
-                        )}
-                        <span>{item.name}</span>
-                      </div>
+                      <MagneticButton>
+                        <a
+                          href={item.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group block"
+                        >
+                          <div className="px-5 py-3 bg-white border border-gray-200 rounded-full text-sm text-gray-600 font-medium hover:border-[#0047FF] hover:text-[#0047FF] transition-all duration-300 shadow-sm flex items-center gap-3">
+                            {item.logo && (
+                              <img 
+                                src={item.logo} 
+                                alt={`${item.name} logo`}
+                                className="w-5 h-5 object-contain flex-shrink-0"
+                              />
+                            )}
+                            <span>{item.name}</span>
+                          </div>
+                        </a>
+                      </MagneticButton>
                     </motion.div>
                   ))}
                 </div>
