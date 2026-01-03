@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
              onClick={handleCopy}
              className="flex items-center gap-3 text-2xl font-light hover:text-[#0047FF] transition-colors group"
            >
-             marius.dm@example.com
+             contact@mariusdiguat.fr
              {copied ? <Check className="w-5 h-5 text-green-500" /> : <Copy className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />}
            </button>
         </div>

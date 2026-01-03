@@ -90,7 +90,7 @@ export const WorkStack: React.FC = () => {
   });
 
   return (
-    <section ref={container} id="work" className="relative mt-[10vh] mb-[10vh] px-6">
+    <section ref={container} id="work" className="relative py-24 md:py-32 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Consistent Section Header */}
         <div className="flex flex-col md:flex-row items-end justify-between mb-8 md:mb-12">
@@ -101,7 +101,7 @@ export const WorkStack: React.FC = () => {
              (02 — Portfolio)
            </span>
         </div>
-        <div className="h-px w-full bg-gray-200 mb-24" />
+        <div className="h-px w-full bg-gray-200" />
       </div>
       
       {PROJECTS.map((project, i) => {
