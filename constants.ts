@@ -98,43 +98,50 @@ export const CAREER_TIMELINE = [
     date: "Aug 2025 - Present",
     role: "Software Engineer",
     company: "Spore.Bio",
-    description: "Deeptech reinventing microbiological testing. Developing high-performance digital solutions."
+    description: "Deeptech reinventing microbiological testing. Developing high-performance digital solutions.",
+    logo: "/images/career/sporebio.png",
   },
   {
     date: "June 2025",
     role: "Engineering Degree",
     company: "UTBM",
-    description: "Completion of engineering studies."
+    description: "Completion of engineering studies.",
+    logo: "/images/career/utbm.webp",
   },
   {
     date: "Feb 2025 - June 2025",
     role: "End-of-studies Internship",
     company: "Dataiku",
-    description: "Working on enterprise AI platform solutions."
+    description: "Working on enterprise AI platform solutions.",
+    logo: "/images/career/dataiku.webp",
   },
   {
     date: "March 2024 - Present",
     role: "Self-employed Developer",
-    company: "MarsCode",
-    description: "Freelance missions offering tailored digital solutions for clients."
+    company: "MariusCode",
+    description: "Freelance missions offering tailored digital solutions for clients.",
+    logo: "/images/career/mariuscode.svg",
   },
   {
     date: "Sept 2024 - Jan 2025",
     role: "AI specialization",
     company: "ULiège",
-    description: "Specialized block semester focusing on AI and virtual environments."
+    description: "Specialized block semester focusing on AI and virtual environments.",
+    logo: "/images/career/uliege.svg",
   },
   {
     date: "Mar 2024 - June 2024",
     role: "Virtual World specialization",
     company: "UTBM",
-    description: "Specialized block semester focusing on AI and virtual environments."
+    description: "Specialized block semester focusing on AI and virtual environments.",
+    logo: "/images/career/utbm.webp",
   },
   {
     date: "Aug 2023 - Feb 2024",
     role: "Assistant Engineer Intern",
     company: "Sonceboz",
-    description: "Assisting in engineering tasks and development."
+    description: "Assisting in engineering tasks and development.",
+    logo: "/images/career/sonceboz.png",
   }
 ];
 

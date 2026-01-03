@@ -26,7 +26,7 @@ export const Career: React.FC = () => {
           </div>
 
           {/* Timeline */}
-          <div className="md:w-2/3 flex flex-col gap-12 border-l border-gray-200 pl-8 md:pl-16 relative">
+          <div className="md:w-2/3 flex flex-col gap-12 border-l border-gray-200 pl-8 ml-8 md:pl-16 relative">
             {CAREER_TIMELINE.map((item, index) => (
               <motion.div 
                 key={index}
@@ -36,8 +36,16 @@ export const Career: React.FC = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="relative group"
               >
-                {/* Timeline Dot */}
-                <div className="absolute -left-[41px] md:-left-[73px] top-2 w-4 h-4 rounded-full bg-white border-4 border-gray-200 group-hover:border-[#0047FF] transition-colors" />
+                {/* Timeline Logo */}
+                {item.logo && (
+                  <div className="absolute -left-[52px] md:-left-[88px] top-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-white rounded-lg border-2 border-gray-200 group-hover:border-[#0047FF] transition-colors p-1.5 md:p-2 shadow-sm z-10">
+                    <img 
+                      src={item.logo} 
+                      alt={`${item.company} logo`}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                )}
                 
                 <span className="font-mono text-xs uppercase tracking-wider text-gray-500 mb-2 block">
                   {item.date}
