@@ -36,9 +36,16 @@ export const Skills: React.FC = () => {
                 {category.items.map((item, i) => (
                   <span 
                     key={i} 
-                    className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm text-gray-600 font-medium hover:border-gray-400 hover:text-black transition-colors cursor-default shadow-sm"
+                    className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm text-gray-600 font-medium hover:border-gray-400 hover:text-black transition-colors cursor-default shadow-sm flex items-center gap-2"
                   >
-                    {item}
+                    {item.logo && (
+                      <img 
+                        src={item.logo} 
+                        alt={`${item.name} logo`}
+                        className="w-4 h-4 object-contain"
+                      />
+                    )}
+                    {item.name}
                   </span>
                 ))}
               </div>

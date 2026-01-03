@@ -148,23 +148,60 @@ export const CAREER_TIMELINE = [
 export const SKILL_CATEGORIES = [
   {
     title: "Programming",
-    items: ["Python", "C", "C#", "C++", "Java", "Git"]
+    items: [
+      { name: "Python", logo: "/images/skills/programming/python.svg" },
+      { name: "C", logo: "/images/skills/programming/c.svg" },
+      { name: "C#", logo: "/images/skills/programming/csharp.svg" },
+      { name: "C++", logo: null },
+      { name: "Java", logo: "/images/skills/programming/java.svg" },
+      { name: "Git", logo: "/images/skills/programming/git.svg" }
+    ]
   },
   {
     title: "Back-end",
-    items: [".NET", "PHP", "Node Red", "NestJS", "NodeJS", "Flask"]
+    items: [
+      { name: ".NET", logo: "/images/skills/backend/dotnet.svg" },
+      { name: "PHP", logo: null },
+      { name: "Node Red", logo: null },
+      { name: "NestJS", logo: "/images/skills/backend/nestjs.svg" },
+      { name: "NodeJS", logo: "/images/skills/backend/nodejs.svg" },
+      { name: "Flask", logo: "/images/skills/backend/flask.svg" }
+    ]
   },
   {
     title: "Front-end",
-    items: ["HTML", "CSS", "TypeScript", "JavaScript", "Angular", "Ionic", "React"]
+    items: [
+      { name: "HTML", logo: "/images/skills/frontend/html.svg" },
+      { name: "CSS", logo: "/images/skills/frontend/css.svg" },
+      { name: "TypeScript", logo: "/images/skills/frontend/typescript.svg" },
+      { name: "JavaScript", logo: null },
+      { name: "Angular", logo: "/images/skills/frontend/angular.svg" },
+      { name: "Ionic", logo: null },
+      { name: "React", logo: "/images/skills/frontend/react.png" }
+    ]
   },
   {
     title: "Databases",
-    items: ["SQL", "MongoDB", "Neo4j", "Firebase", "InfluxDB", "Strapi"]
+    items: [
+      { name: "SQL", logo: "/images/skills/databases/sql.svg" },
+      { name: "MongoDB", logo: null },
+      { name: "Neo4j", logo: null },
+      { name: "Firebase", logo: "/images/skills/databases/firebase.svg" },
+      { name: "InfluxDB", logo: null },
+      { name: "Strapi", logo: null }
+    ]
   },
   {
     title: "Graphics",
-    items: ["Unity", "JavaFX", "Qt Creator", "Figma", "Fusion 360", "Blender", "Inkscape"]
+    items: [
+      { name: "Unity", logo: "/images/skills/graphics/unity.svg" },
+      { name: "JavaFX", logo: null },
+      { name: "Qt Creator", logo: null },
+      { name: "Figma", logo: "/images/skills/graphics/figma.svg" },
+      { name: "Fusion 360", logo: null },
+      { name: "Blender", logo: "/images/skills/graphics/blender.png" },
+      { name: "Inkscape", logo: "/images/skills/graphics/inkscape.svg" }
+    ]
   }
 ];
 
