@@ -147,25 +147,34 @@ export const CAREER_TIMELINE = [
 
 export const SKILL_CATEGORIES = [
   {
-    title: "Programming",
+    title: "Languages",
     items: [
       { name: "Python", logo: "/images/skills/programming/python.svg" },
+      { name: "TypeScript", logo: "/images/skills/programming/typescript.svg" },
+      { name: "JavaScript", logo: "/images/skills/programming/javascript.svg" },
       { name: "C", logo: "/images/skills/programming/c.svg" },
       { name: "C#", logo: "/images/skills/programming/csharp.svg" },
-      { name: "C++", logo: null },
+      { name: "C++", logo: "/images/skills/programming/cpp.svg" },
       { name: "Java", logo: "/images/skills/programming/java.svg" },
-      { name: "Git", logo: "/images/skills/programming/git.svg" }
+      { name: "Git", logo: "/images/skills/programming/git.svg" },
+      { name: "Bash", logo: "/images/skills/programming/bash.png" }
     ]
   },
   {
     title: "Back-end",
     items: [
+      { name: "FastAPI", logo: "/images/skills/backend/fastapi.svg" },
+      { name: "NextJS", logo: "/images/skills/backend/nextjs.svg" },
       { name: ".NET", logo: "/images/skills/backend/dotnet.svg" },
-      { name: "PHP", logo: null },
-      { name: "Node Red", logo: null },
+      { name: "PHP", logo: "/images/skills/backend/php.svg" },
+      { name: "Node Red", logo: "/images/skills/backend/nodered.svg" },
       { name: "NestJS", logo: "/images/skills/backend/nestjs.svg" },
       { name: "NodeJS", logo: "/images/skills/backend/nodejs.svg" },
-      { name: "Flask", logo: "/images/skills/backend/flask.svg" }
+      { name: "Flask", logo: "/images/skills/backend/flask.svg" },
+      { name: "N8N", logo: "/images/skills/backend/n8n.png" },
+      { name: "Stripe", logo: "/images/skills/backend/stripe.svg" },
+      { name: "Redis", logo: "/images/skills/backend/redis.svg" },
+      { name: "SQLAlchemy", logo: "/images/skills/backend/sqlalchemy.svg" }
     ]
   },
   {
@@ -174,33 +183,52 @@ export const SKILL_CATEGORIES = [
       { name: "HTML", logo: "/images/skills/frontend/html.svg" },
       { name: "CSS", logo: "/images/skills/frontend/css.svg" },
       { name: "TypeScript", logo: "/images/skills/frontend/typescript.svg" },
-      { name: "JavaScript", logo: null },
+      { name: "JavaScript", logo: "/images/skills/frontend/javascript.svg" },
+      { name: "Vite", logo: "/images/skills/frontend/vite.svg" },
       { name: "Angular", logo: "/images/skills/frontend/angular.svg" },
-      { name: "Ionic", logo: null },
-      { name: "React", logo: "/images/skills/frontend/react.png" }
+      { name: "Ionic", logo: "/images/skills/frontend/ionic.svg" },
+      { name: "React", logo: "/images/skills/frontend/react.png" },
+      { name: "Tailwind CSS", logo: "/images/skills/frontend/tailwindcss.svg" },
+      { name: "Three.js", logo: "/images/skills/frontend/threejs.svg" },
+      { name: "React Native", logo: "/images/skills/frontend/expo-go.png" }
+
     ]
   },
   {
     title: "Databases",
     items: [
       { name: "SQL", logo: "/images/skills/databases/sql.svg" },
-      { name: "MongoDB", logo: null },
-      { name: "Neo4j", logo: null },
+      { name: "PostgreSQL", logo: "/images/skills/databases/postgresql.svg" },
+      { name: "Supabase", logo: "/images/skills/databases/supabase.webp" },
       { name: "Firebase", logo: "/images/skills/databases/firebase.svg" },
-      { name: "InfluxDB", logo: null },
-      { name: "Strapi", logo: null }
+      { name: "MongoDB", logo: "/images/skills/databases/mongodb.svg" },
+      { name: "Neo4j", logo: "/images/skills/databases/neo4j.png" },
+      { name: "PGAdmin", logo: "/images/skills/databases/pgadmin.png" },
+    ]
+  },
+  {
+    title: "Infrastructure",
+    items: [
+      { name: "AWS", logo: "/images/skills/infrastructure/aws.png" },
+      { name: "Docker", logo: "/images/skills/infrastructure/docker.svg" },
+      { name: "Ansible", logo: "/images/skills/infrastructure/ansible.webp" },
+      { name: "Prometheus", logo: "/images/skills/infrastructure/prometheus.png" },
+      { name: "Jenkins", logo: "/images/skills/infrastructure/jenkins.svg" },
+      { name: "Grafana", logo: "/images/skills/infrastructure/grafana.svg" },
+      { name: "Linux", logo: "/images/skills/infrastructure/linux.svg" },
     ]
   },
   {
     title: "Graphics",
     items: [
       { name: "Unity", logo: "/images/skills/graphics/unity.svg" },
-      { name: "JavaFX", logo: null },
-      { name: "Qt Creator", logo: null },
       { name: "Figma", logo: "/images/skills/graphics/figma.svg" },
-      { name: "Fusion 360", logo: null },
+      { name: "JavaFX", logo: "/images/skills/graphics/javafx.svg" },
+      { name: "Qt Creator", logo: "/images/skills/graphics/qt.svg" },
+      { name: "Fusion 360", logo: "/images/skills/graphics/fusion360.png" },
       { name: "Blender", logo: "/images/skills/graphics/blender.png" },
-      { name: "Inkscape", logo: "/images/skills/graphics/inkscape.svg" }
+      { name: "Inkscape", logo: "/images/skills/graphics/inkscape.svg" },
+      { name: "Canva", logo: "/images/skills/graphics/canva.png" },
     ]
   }
 ];
