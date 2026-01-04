@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, MotionValue } from 'framer-motion';
 import { PROJECTS } from '../constants';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Github } from 'lucide-react';
+import { MagneticButton } from './ui/MagneticButton';
 
 interface CardProps {
   project: typeof PROJECTS[0];
@@ -55,12 +56,38 @@ const Card: React.FC<CardProps> = ({
             </div>
           </div>
           
-          <button className="group flex items-center gap-2 text-sm font-semibold uppercase tracking-wide mt-8 md:mt-0">
-            View Case Study
-            <div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center group-hover:bg-[#0047FF] group-hover:text-white transition-colors">
-              <ArrowUpRight className="w-4 h-4" />
-            </div>
-          </button>
+          <div className="flex items-center gap-3 mt-8 md:mt-0">
+            {project.url && (
+              <MagneticButton>
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-[#0047FF] transition-colors"
+                >
+                  <span>Visit</span>
+                  <div className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center group-hover:bg-[#0047FF] group-hover:text-white transition-colors">
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </div>
+                </a>
+              </MagneticButton>
+            )}
+            {project.github && (
+              <MagneticButton>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-[#0047FF] transition-colors"
+                >
+                  <span>Code</span>
+                  <div className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center group-hover:bg-[#0047FF] group-hover:text-white transition-colors">
+                    <Github className="w-3.5 h-3.5" />
+                  </div>
+                </a>
+              </MagneticButton>
+            )}
+          </div>
         </div>
 
         {/* Right Image */}

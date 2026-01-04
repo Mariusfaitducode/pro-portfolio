@@ -9,7 +9,8 @@ export const PROJECTS = [
     description: "A web application that helps you manage your mailbox efficiently by providing a clean and intuitive interface for your emails.",
     tech: ["NextJs", "TypeScript", "Tailwind CSS", "Supabase"],
     image: "/images/projects/TidyMailbox.png",
-    link: "https://tidy-mailbox.com",
+    url: "https://tidy-mailbox.com",
+    github: "https://github.com/Mariusfaitducode/TidyMailBox",
     color: "#2A9D8F"
   },
   {
@@ -20,7 +21,8 @@ export const PROJECTS = [
     description: "An e-commerce website for a new modern matcha brand, featuring a clean and intuitive interface for browsing and buying matcha products.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Supabase", "Stripe"],
     image: "/images/projects/BestMatchaEver.png",
-    link: "https://bestmatcheaever.com",
+    url: "https://bestmatchaever.com",
+    github: null,
     color: "#E76F51"
   },
   {
@@ -31,6 +33,8 @@ export const PROJECTS = [
     description: "A recording app that allows to record your meetings. The meetings is then sent to Optiverse for transcription and analysis.",
     tech: ["React Native", "TypeScript", "Tailwind CSS", "Supabase"],
     image: "/images/projects/OptiApp.png",
+    url: "https://apps.apple.com/fr/app/optiverse/id6743003995",
+    github: null,
     color: "#F4A261"
   },
   {
@@ -41,6 +45,8 @@ export const PROJECTS = [
     description: "A mobile todo-list application that visualizes task completion as a growing graph, providing visual motivation for productivity.",
     tech: ["Angular", "Ionic", "D3.js", "Firebase"],
     image: "/images/projects/ConcepTask.jpeg",
+    url: null,
+    github: "https://github.com/Mariusfaitducode/ConcepTask",
     color: "#264653"
   }
 ];
