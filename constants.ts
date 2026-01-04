@@ -100,6 +100,7 @@ export const CAREER_TIMELINE = [
     company: "Spore.Bio",
     description: "Deeptech reinventing microbiological testing. Developing high-performance digital solutions.",
     logo: "/images/career/sporebio.png",
+    url: "https://spore.bio",
   },
   {
     date: "June 2025",
@@ -107,6 +108,7 @@ export const CAREER_TIMELINE = [
     company: "UTBM",
     description: "Completion of engineering studies.",
     logo: "/images/career/utbm.webp",
+    url: "https://www.utbm.fr",
   },
   {
     date: "Feb 2025 - June 2025",
@@ -114,6 +116,7 @@ export const CAREER_TIMELINE = [
     company: "Dataiku",
     description: "Working on enterprise AI platform solutions.",
     logo: "/images/career/dataiku.webp",
+    url: "https://www.dataiku.com",
   },
   {
     date: "March 2024 - Present",
@@ -121,6 +124,7 @@ export const CAREER_TIMELINE = [
     company: "MariusCode",
     description: "Freelance missions offering tailored digital solutions for clients.",
     logo: "/images/career/mariuscode.svg",
+    url: "https://mariusdiguat.fr",
   },
   {
     date: "Sept 2024 - Jan 2025",
@@ -128,6 +132,7 @@ export const CAREER_TIMELINE = [
     company: "ULiège",
     description: "Specialized block semester focusing on AI and virtual environments.",
     logo: "/images/career/uliege.svg",
+    url: "https://www.uliege.be",
   },
   {
     date: "Mar 2024 - June 2024",
@@ -135,6 +140,7 @@ export const CAREER_TIMELINE = [
     company: "UTBM",
     description: "Specialized block semester focusing on AI and virtual environments.",
     logo: "/images/career/utbm.webp",
+    url: "https://www.utbm.fr",
   },
   {
     date: "Aug 2023 - Feb 2024",
@@ -142,6 +148,7 @@ export const CAREER_TIMELINE = [
     company: "Sonceboz",
     description: "Assisting in engineering tasks and development.",
     logo: "/images/career/sonceboz.png",
+    url: "https://www.sonceboz.com",
   }
 ];
 

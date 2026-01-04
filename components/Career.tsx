@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CAREER_TIMELINE } from '../constants';
+import { MagneticButton } from './ui/MagneticButton';
 
 export const Career: React.FC = () => {
   return (
@@ -37,13 +38,22 @@ export const Career: React.FC = () => {
                 className="relative group"
               >
                 {/* Timeline Logo */}
-                {item.logo && (
-                  <div className="absolute -left-[52px] md:-left-[88px] top-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-white rounded-lg border-2 border-gray-200 group-hover:border-[#0047FF] transition-colors p-1.5 md:p-2 shadow-sm z-10">
-                    <img 
-                      src={item.logo} 
-                      alt={`${item.company} logo`}
-                      className="w-full h-full object-contain"
-                    />
+                {item.logo && item.url && (
+                  <div className="absolute -left-[52px] md:-left-[88px] top-0 z-10">
+                    <MagneticButton>
+                      <a 
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-white rounded-lg border-2 border-gray-200 hover:border-[#0047FF] transition-colors p-1.5 md:p-2 shadow-sm cursor-pointer"
+                      >
+                        <img 
+                          src={item.logo} 
+                          alt={`${item.company} logo`}
+                          className="w-full h-full object-contain"
+                        />
+                      </a>
+                    </MagneticButton>
                   </div>
                 )}
                 
@@ -53,9 +63,20 @@ export const Career: React.FC = () => {
                 <h3 className="font-serif text-2xl text-gray-900 mb-1">
                   {item.role}
                 </h3>
-                <div className="text-[#0047FF] font-medium mb-3">
-                  {item.company}
-                </div>
+                {item.url ? (
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#0047FF] font-medium mb-3 hover:underline transition-all cursor-pointer inline-block"
+                  >
+                    {item.company}
+                  </a>
+                ) : (
+                  <div className="text-[#0047FF] font-medium mb-3">
+                    {item.company}
+                  </div>
+                )}
                 <p className="text-gray-600 text-sm leading-relaxed max-w-md">
                   {item.description}
                 </p>
