@@ -6,7 +6,7 @@ export const Footer: React.FC = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("marius@example.com");
+    navigator.clipboard.writeText("contact@mariusdiguat.fr");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -27,16 +27,24 @@ export const Footer: React.FC = () => {
 
       <div className="relative z-10 flex flex-col items-center justify-center flex-grow">
         <div className="relative group cursor-default">
-           <h2 className="font-serif text-[12vw] leading-[0.8] text-center pointer-events-none group-hover:text-transparent transition-colors duration-500 bg-clip-text bg-cover"
-               style={{ backgroundImage: `url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop')` }}>
-             <span className="text-white group-hover:text-transparent bg-clip-text bg-gradient-to-r from-[#0047FF] to-[#0047FF] transition-all duration-700">
-               Let's build
-             </span>
-             <br />
-             <span className="text-gray-500 group-hover:text-white transition-colors duration-500">
-               your vision.
-             </span>
-           </h2>
+           <a
+             href="https://calendar.app.google/ks3sMnmdP5Z5ZbUj9"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="block group"
+             style={{ textDecoration: 'none' }}
+           >
+             <h2 className="font-serif text-[12vw] leading-[0.8] text-center transition-colors duration-500 bg-clip-text bg-cover group-hover:text-transparent pointer-events-auto"
+                 style={{ backgroundImage: `url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop')` }}>
+               <span className="text-white group-hover:text-transparent bg-clip-text bg-gradient-to-r from-[#0047FF] to-[#0047FF] transition-all duration-700">
+                 Let's build
+               </span>
+               <br />
+               <span className="text-gray-500 group-hover:text-white transition-colors duration-500">
+                 your vision.
+               </span>
+             </h2>
+           </a>
         </div>
       </div>
 

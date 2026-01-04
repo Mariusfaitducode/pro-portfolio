@@ -32,10 +32,10 @@ const Card: React.FC<CardProps> = ({
     <div ref={container} className="h-screen flex items-center justify-center sticky top-0">
       <motion.div 
         style={{ scale, top: `calc(-5vh + ${index * 25}px)` }} 
-        className="relative flex flex-col md:flex-row w-full max-w-6xl h-[70vh] md:h-[600px] bg-white rounded-3xl border border-gray-200 shadow-2xl overflow-hidden origin-top"
+        className="relative flex flex-col md:flex-row w-full max-w-6xl h-[85vh] md:h-[600px] bg-white rounded-3xl border border-gray-200 shadow-2xl overflow-hidden origin-top"
       >
         {/* Left Content */}
-        <div className="w-full md:w-2/5 p-8 md:p-12 flex flex-col justify-between h-full relative z-10 bg-white">
+        <div className="w-full md:w-2/5 p-6 md:p-12 flex flex-col justify-between h-auto md:h-full relative z-10 bg-white md:flex-shrink-0">
           <div>
             <div className="flex items-center gap-3 mb-6">
               <span className="px-3 py-1 rounded-full border border-gray-200 text-xs font-mono uppercase text-gray-500">
@@ -45,8 +45,8 @@ const Card: React.FC<CardProps> = ({
                 {project.category}
               </span>
             </div>
-            <h3 className="font-serif text-4xl md:text-5xl text-gray-900 mb-4">{project.title}</h3>
-            <p className="text-gray-600 leading-relaxed text-sm md:text-base mb-8">
+            <h3 className="font-serif text-3xl md:text-5xl text-gray-900 mb-3 md:mb-4">{project.title}</h3>
+            <p className="text-gray-600 leading-relaxed text-sm md:text-base mb-4 md:mb-8">
               {project.description}
             </p>
             <div className="flex flex-wrap gap-2">
@@ -91,7 +91,7 @@ const Card: React.FC<CardProps> = ({
         </div>
 
         {/* Right Image */}
-        <div className="w-full md:w-3/5 h-full relative overflow-hidden bg-gray-100">
+        <div className="w-full md:w-3/5 h-[50vh] md:h-full flex-shrink-0 relative overflow-hidden bg-gray-100">
            <motion.div 
              style={{ scale: imageScale }}
              className="w-full h-full"
