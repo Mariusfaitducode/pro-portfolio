@@ -42,11 +42,19 @@ export const Header: React.FC = () => {
 
         {/* Status */}
         <div className="flex-1 flex justify-end items-center gap-2">
-          <span className="relative flex h-3 w-3">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-          </span>
-          <span className="text-xs font-mono uppercase tracking-wider text-gray-500 hidden sm:block">Available</span>
+        <a
+            href="https://calendar.app.google/ks3sMnmdP5Z5ZbUj9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
+            style={{ textDecoration: 'none' }}
+          >
+            <span className="relative flex h-3 w-3">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            </span>
+            <span className="text-xs font-mono uppercase tracking-wider text-gray-500 hidden sm:block">Available</span>
+          </a>
         </div>
       </nav>
     </motion.header>

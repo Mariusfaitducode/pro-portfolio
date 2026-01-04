@@ -86,10 +86,15 @@ export const Hero: React.FC = () => {
                className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start"
             >
               <MagneticButton>
-                <button className="px-8 py-4 bg-[#111111] text-white rounded-full font-medium text-sm uppercase tracking-wide hover:bg-[#0047FF] transition-colors flex items-center gap-2">
+                <a
+                  href="https://calendar.app.google/ks3sMnmdP5Z5ZbUj9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 bg-[#111111] text-white rounded-full font-medium text-sm uppercase tracking-wide hover:bg-[#0047FF] transition-colors flex items-center gap-2"
+                >
                   <Calendar className="w-4 h-4" />
                   Let's work together
-                </button>
+                </a>
               </MagneticButton>
             </motion.div>
           </div>
