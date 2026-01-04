@@ -34,7 +34,7 @@ export const Hero: React.FC = () => {
           className="mb-8 flex justify-center items-center gap-3"
         >
           <div className="h-px w-8 bg-gray-300"></div>
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-gray-500">Full-Stack Software Engineer</span>
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-gray-500">Marius Diguat Mateus</span>
           <div className="h-px w-8 bg-gray-300"></div>
         </motion.div>
 

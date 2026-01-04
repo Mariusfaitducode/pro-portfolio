@@ -14,13 +14,13 @@ export const Footer: React.FC = () => {
   return (
     <footer className="relative h-[90vh] flex flex-col justify-between p-6 md:p-12 bg-[#111111] text-white rounded-t-[3rem] mt-24 overflow-hidden">
       <div className="flex justify-between items-start">
-        <div className="font-serif text-2xl">Marius.</div>
+        <div className="font-serif text-2xl">MariusCode</div>
         <div className="text-right">
           <div className="font-mono text-xs text-gray-400 uppercase mb-2">Socials</div>
           <div className="flex flex-col gap-1 text-sm text-gray-300">
-            <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
-            <a href="#" className="hover:text-white transition-colors">GitHub</a>
-            <a href="#" className="hover:text-white transition-colors">Twitter</a>
+            <a href="https://www.linkedin.com/in/marius-diguat/" className="hover:text-white transition-colors">LinkedIn</a>
+            <a href="https://github.com/Mariusfaitducode" className="hover:text-white transition-colors">GitHub</a>
+            <a href="https://x.com/MariusCode" className="hover:text-white transition-colors">Twitter</a>
           </div>
         </div>
       </div>

@@ -22,7 +22,8 @@ export const Header: React.FC = () => {
       <nav className="flex items-center justify-between w-full max-w-5xl px-6 py-3 bg-white/80 backdrop-blur-md border border-gray-200 rounded-full shadow-sm">
         {/* Logo */}
         <div className="flex-1">
-          <span className="font-serif text-2xl font-bold tracking-tight text-gray-900">Marius.</span>
+          <span className="font-serif text-2xl font-bold tracking-tight text-gray-900">Marius</span>
+          <span className="font-serif text-2xl font-bold tracking-tight text-[#0047FF]">Code</span>
         </div>
 
         {/* Links */}
