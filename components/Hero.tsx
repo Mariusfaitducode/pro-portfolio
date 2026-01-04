@@ -13,6 +13,13 @@ export const Hero: React.FC = () => {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
+  const scrollToServices = () => {
+    const servicesSection = document.getElementById('services');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section ref={containerRef} className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-12 overflow-hidden">
       <motion.div 
@@ -117,12 +124,15 @@ export const Hero: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden md:flex"
       >
         <MagneticButton>
-          <div className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-200 bg-white/50 backdrop-blur-sm group hover:border-gray-400 transition-colors">
+          <button 
+            onClick={scrollToServices}
+            className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-200 bg-white/50 backdrop-blur-sm group hover:border-gray-400 transition-colors cursor-pointer"
+          >
              <ArrowDown className="w-4 h-4 text-gray-600 group-hover:text-black transition-colors animate-bounce" />
-          </div>
+          </button>
         </MagneticButton>
       </motion.div>
     </section>
