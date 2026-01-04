@@ -3,6 +3,15 @@ import { motion } from 'framer-motion';
 import { NAV_LINKS } from '../constants';
 
 export const Header: React.FC = () => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.substring(1); // Remove the #
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <motion.header 
       initial={{ y: -100, opacity: 0 }}
@@ -22,7 +31,8 @@ export const Header: React.FC = () => {
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-sm font-medium text-gray-600 hover:text-black transition-colors relative group"
+              onClick={(e) => handleNavClick(e, link.href)}
+              className="text-sm font-medium text-gray-600 hover:text-black transition-colors relative group cursor-pointer"
             >
               {link.name}
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-black transition-all group-hover:w-full" />
