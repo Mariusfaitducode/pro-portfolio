@@ -97,11 +97,11 @@ export const AnimatedBackground: React.FC = () => {
         const influence = p.blueInfluence;
         
         if (influence > 0.01) {
-          // Make blue dots much more visible - stronger color and higher alpha
-          const blueAlpha = Math.min(1, finalAlpha * (1.5 + influence * 1.0));
+          // Reduced intensity for better text readability
+          const blueAlpha = Math.min(0.4, finalAlpha * (1.2 + influence * 0.6));
           
           // Blend between dark gray (17, 17, 17) and accent blue (0, 71, 255)
-          // Use stronger influence for more vibrant blue
+          // Reduced intensity for less visual interference
           const r = Math.round(17 + (0 - 17) * influence);
           const g = Math.round(17 + (71 - 17) * influence);
           const b = Math.round(17 + (255 - 17) * influence);
