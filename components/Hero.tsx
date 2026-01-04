@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
           className="mb-8 flex justify-center items-center gap-3"
         >
           <div className="h-px w-8 bg-gray-300"></div>
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-gray-500">Enthusiastic Software Engineer</span>
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-gray-500">Full-Stack Software Engineer</span>
           <div className="h-px w-8 bg-gray-300"></div>
         </motion.div>
 
@@ -43,7 +43,7 @@ export const Hero: React.FC = () => {
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 className="block"
               >
-                Designing
+                Building
               </motion.span>
               <motion.span 
                 initial={{ opacity: 0, y: 50, filter: 'blur(10px)' }}
@@ -69,7 +69,7 @@ export const Hero: React.FC = () => {
               transition={{ duration: 1, delay: 0.4 }}
               className="max-w-md mx-auto md:mx-0 text-gray-600 text-lg font-light leading-relaxed mb-10"
             >
-              Building high-performance applications with a focus on intuitive design.
+              Product-focused full-stack engineer. I build complete solutions across diverse domains.
             </motion.p>
 
             <motion.div 
