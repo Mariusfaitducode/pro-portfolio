@@ -3,6 +3,28 @@ import { Layers, Palette, Compass, Code, Smartphone, Database, Box } from 'lucid
 export const PROJECTS = [
   {
     id: 1,
+    title: "Sur Le Radar",
+    year: "2026",
+    category: "Webmarketing",
+    description:
+      "I co-founded Sur Le Radar, a web marketing agency. We create beautiful, fully customized, and professional landing pages, and we boost your long-term visibility on Google with SEO.",
+    tech: [
+      "Landing Pages",
+      "Custom Design",
+      "Professional",
+      "Conversion",
+      "SEO",
+      "Google Ranking",
+      "Long-Term Visibility",
+      "Web Marketing"
+    ],
+    image: "/images/projects/SurLeRadar.png",
+    url: "https://surleradar.com",
+    github: null,
+    color: "#06D6A0"
+  },
+  {
+    id: 2,
     title: "TidyMailbox",
     year: "2025",
     category: "Mailbox Management",
@@ -14,7 +36,7 @@ export const PROJECTS = [
     color: "#2A9D8F"
   },
   {
-    id: 2,
+    id: 3,
     title: "Best Matcha Ever",
     year: "2025",
     category: "Matcha Shop",
@@ -26,7 +48,7 @@ export const PROJECTS = [
     color: "#E76F51"
   },
   {
-    id: 3,
+    id: 4,
     title: "OptiApp",
     year: "2025",
     category: "Recording App",
@@ -38,7 +60,7 @@ export const PROJECTS = [
     color: "#F4A261"
   },
   {
-    id: 4,
+    id: 5,
     title: "ConcepTask",
     year: "2024",
     category: "Productivity",
